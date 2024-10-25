@@ -9,12 +9,13 @@ import Services from '@/Components/Services';
 import Skills from '@/Components/Skills';
 import Testimonials from '@/Components/Testimonials';
 import React, { useEffect, useState } from 'react'
+import "@/styles/globals.css";
+
 // animation setup Imports :
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 //  and after import AOF you have to install npm i --save-dev @types/aos
-
 
 
 
