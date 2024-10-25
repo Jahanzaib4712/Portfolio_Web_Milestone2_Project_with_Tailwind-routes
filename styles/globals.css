@@ -1,27 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer components {
+    .nav-link{
+        @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 
+        after:transition after:duration-300 after:origin-center hidden
+    }
+
+    .nav-link-mobile {
+        @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block
+        after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 
+        after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+    }
+
+    .heading{
+        @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
+    }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html {
+    scroll-behavior: smooth;
 }
