@@ -9,7 +9,6 @@ import Services from '@/Components/Services';
 import Skills from '@/Components/Skills';
 import Testimonials from '@/Components/Testimonials';
 import React, { useEffect, useState } from 'react'
-import "@/styles/globals.css";
 
 // animation setup Imports :
 import AOS from 'aos';
@@ -59,18 +58,13 @@ AOS.init({
 
 // yeah wooh !! done and lets use this animation funciton in your files...
 
-
-
-
-
-
   return (
     <div className='overflow-x-hidden'>
       <div>
-        <MobileNav nav={nav} closeNav={closeNav}/>
-        <Nav openNav={openNav}/>
-        <Hero/>
-        <div className='relative z-[30]'>
+          <MobileNav nav={nav} closeNav={closeNav}/>
+          <Nav openNav={openNav}/>
+          <Hero/>
+          <div className='relative z-[30]'>
           <About/>
           <Services/>
           <Skills/>
