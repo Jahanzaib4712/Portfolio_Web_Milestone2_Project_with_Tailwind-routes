@@ -5,22 +5,24 @@ import Image from 'next/image'
 import { ArrowDownTrayIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 
+
+
 const Hero = () => {
   return (
     <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
       <Particle/>
 
-      <div className='w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center'>
+      <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
           <div>
              <h1 className='text-[35px] md:text-[50px] text-white font-bold'>
-                Hi, I'M <span className='text-yellow-400'>Shahzaib!</span>
+                Hi, I&apos;M <span className='text-yellow-400'>Shahzaib!</span>
              </h1>
              <TextEffect/>
              <p className='mt-[1.5rem] text-[20px] text-[#ffffff92]'>
-             Hello! I’m Jahanzaib, a developer and tech enthusiast from Karachi, Pakistan. Alhamdulillah, 
+             Hello! I&apos;m Jahanzaib, a developer and tech enthusiast from Karachi, Pakistan. Alhamdulillah, 
              I have experience with JavaScript, TypeScript, and Next.js, focusing on 
-             creating efficient web applications. I’m passionate about AI, cybersecurity,
-              and building innovative projects, Insha'Allah. I’m always eager to expand my
+             creating efficient web applications. I&apos;m passionate about AI, cybersecurity,
+              and building innovative projects, Insha&apos;Allah. I&apos;m always eager to expand my
                skills and contribute impactful solutions to the tech world.
                 </p>
                 <div className='mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6'>
@@ -44,8 +46,8 @@ const Hero = () => {
             <Image 
             src="/images/u1.jpg" 
             alt="user" 
-            layout='fill' 
-            className='object-cover rounded-full'/>          
+            layout="fill" 
+            className="object-cover rounded-full"/>          
         </div>
         
             
@@ -56,4 +58,3 @@ const Hero = () => {
 }
 
 export default Hero
-
