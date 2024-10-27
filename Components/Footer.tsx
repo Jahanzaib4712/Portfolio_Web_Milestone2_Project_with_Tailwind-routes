@@ -59,9 +59,7 @@ const Footer = () => {
               <Link href="/PrivacyPolicy" >
               <p className='text-[16px] text-white opacity-80 hover:text-yellow-300'>Privacy Policy</p>
               </Link>
-              <Link href="">
               <p className='text-[16px] text-white opacity-80 hover:text-yellow-300'>Sitemap</p>
-              </Link>
             </div>
 
           </div>
