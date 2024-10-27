@@ -16,7 +16,7 @@ const Nav = ({openNav}:Props) => {
           WEB 
           <span className='text-yellow-300'>DEV</span>
         </h1>                 
-           <Link href="#Home"> <div className='nav-link'>HOME</div></Link>
+           <Link href="#"> <div className='nav-link'>HOME</div></Link>
            <Link href="#services"> <div className='nav-link'>SERVICES</div></Link>
            <Link href="#About"><div className='nav-link'>ABOUT</div></Link>
            <Link href="#Project"><div className='nav-link'>PROJECT</div></Link>

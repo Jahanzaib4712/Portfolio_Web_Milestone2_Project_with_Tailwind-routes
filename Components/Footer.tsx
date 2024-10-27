@@ -1,4 +1,5 @@
 import { DevicePhoneMobileIcon, EnvelopeIcon, MapIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link';
 import React from 'react'
 
 const Footer = () => {
@@ -52,13 +53,15 @@ const Footer = () => {
             Copyright © 2024 <span className='text-yellow-300'>Created by Shahzaib Nadeem</span>. All rights reserved
             </div>
             <div className='flex items-center space-x-10'>
-              
+              <Link href="/Terms">
               <p className='text-[16px] text-white opacity-80 hover:text-yellow-300'>Terms & Condition</p>
-              
-              
+              </Link >
+              <Link href="/PrivacyPolicy" >
               <p className='text-[16px] text-white opacity-80 hover:text-yellow-300'>Privacy Policy</p>
-              
+              </Link>
+              <Link href="">
               <p className='text-[16px] text-white opacity-80 hover:text-yellow-300'>Sitemap</p>
+              </Link>
             </div>
 
           </div>
