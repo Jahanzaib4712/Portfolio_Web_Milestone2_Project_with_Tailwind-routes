@@ -1,6 +1,7 @@
 // pages/terms.tsx
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 const TermsOfService = () => {
   return (
@@ -24,9 +25,9 @@ const TermsOfService = () => {
       <p className="text-lg text-gray-600 mb-4">
         We reserve the right to modify these terms at any time. Please check this page periodically for changes.
       </p>
-      <a href="/" className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+      <Link href="/" className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
         Back to Home
-      </a>
+      </Link>
     </div>
   );
 };

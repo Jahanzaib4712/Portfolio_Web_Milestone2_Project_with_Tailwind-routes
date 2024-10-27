@@ -1,6 +1,7 @@
 // pages/privacy.tsx
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
@@ -25,9 +26,9 @@ const PrivacyPolicy = () => {
       <p className="text-lg text-gray-600 mb-4">
         We implement various security measures to maintain the safety of your personal information.
       </p>
-      <a href="/" className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+      <Link href="/" className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
         Back to Home
-      </a>
+      </Link>
     </div>
   );
 };
