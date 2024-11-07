@@ -1,13 +1,6 @@
-import About from '@/Components/About';
-import Blog from '@/Components/Blog';
-import Footer from '@/Components/Footer';
 import Hero from '@/Components/Hero';
 import MobileNav from '@/Components/MobileNav';
 import Nav from '@/Components/Nav';
-import Projects from '@/Components/Projects';
-import Services from '@/Components/Services';
-import Skills from '@/Components/Skills';
-import Testimonials from '@/Components/Testimonials';
 import React, { useEffect, useState } from 'react'
 
 // animation setup Imports :
@@ -59,19 +52,21 @@ AOS.init({
 // yeah wooh !! done and lets use this animation funciton in your files...
 
   return (
+    
     <div className='overflow-x-hidden'>
+      
       <div>
           <MobileNav nav={nav} closeNav={closeNav}/>
           <Nav openNav={openNav}/>
           <Hero/>
           <div className='relative z-[30]'>
-          <About/>
-          <Services/>
-          <Skills/>
-          <Projects/>
+          {/* <About/> */}
+          {/* <Services/> */}
+          {/* <Skills/> */}
+          {/* <Projects/>
           <Testimonials/>
           <Blog/>
-          <Footer/>
+          <Footer/> */}
         </div>
       </div>
     </div>

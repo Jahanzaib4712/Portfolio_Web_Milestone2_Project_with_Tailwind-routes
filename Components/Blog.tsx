@@ -5,14 +5,14 @@ import React from 'react'
 const Blog = () => {
   return (
     <section id='Blog'>
-    <div className='pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#02050a]'>
+    <div className='pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#02050a] h-[100vh] mt-[3rem]'>
       <h1 className='heading'>
         MY 
         <span className='text-yellow-400'> BLOG</span>
       </h1>
       <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-[4rem] gap-[4rem] gap-[3rem] w-[80%] mx-auto'>
         {/* 1st Blog Card */}
-        <div>
+        <div data-aos="fade-right">
           <div className='w-[100%] relative h-[400px]'>
             <Image  
             src="/images/blog3.jpg" 
@@ -42,7 +42,7 @@ const Blog = () => {
           </a>
         </div>
          {/* 2nd Blog Card */}
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="300">
           <div className='w-[100%] relative h-[400px]'>
             <Image  
             src="/images/blog2.jpg"
@@ -74,7 +74,7 @@ const Blog = () => {
           </a>
         </div>
         {/* 3rd Blog Card */}
-        <div>
+        <div data-aos="fade-left" data-aos-delay="500">
           <div className='w-[100%] relative h-[400px]'>
             <Image  
             src="/images/blog1.jpg" 

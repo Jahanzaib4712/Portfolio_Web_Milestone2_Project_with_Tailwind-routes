@@ -4,7 +4,7 @@ import React from 'react'
 
 
 interface Props{
-  openNav: () => void;
+  openNav?: () => void;
 
 }
 
@@ -16,12 +16,12 @@ const Nav = ({openNav}:Props) => {
           WEB 
           <span className='text-yellow-300'>DEV</span>
         </h1>                 
-           <Link href="#"> <div className='nav-link'>HOME</div></Link>
-           <Link href="#services"> <div className='nav-link'>SERVICES</div></Link>
-           <Link href="#About"><div className='nav-link'>ABOUT</div></Link>
-           <Link href="#Project"><div className='nav-link'>PROJECT</div></Link>
-           <Link href="#Blog"><div className='nav-link'>BlOG</div></Link>
-           <Link href="#Footer"><div className='nav-link'>CONTACT</div></Link>      
+           <Link href="/"> <div className='nav-link'>HOME</div></Link>
+           <Link href="/Services"> <div className='nav-link'>SERVICES</div></Link>
+           <Link href="/Abouts"><div className='nav-link'>ABOUT</div></Link>
+           <Link href="/Project"><div className='nav-link'>PROJECT</div></Link>
+           <Link href="/Blogs"><div className='nav-link'>BlOG</div></Link>
+           <Link href="/Footers"><div className='nav-link'>CONTACT</div></Link>      
         <div onClick={openNav}>
           <Bars3Icon className='w-[3rem] md:hidden h-[2rem] cursor-pointer text-yellow-300 '/>
         </div>
